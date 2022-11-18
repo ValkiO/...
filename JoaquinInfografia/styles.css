@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Dela+Gothic+One&display=swap");
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background-image: url(./img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+}
+
+body.active{
+  background-image: url(./img/background2.png);
+  background-size: cover;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 1rem 4rem;
+}
+
+li.active {
+  background-color: #9f8d60a2;
+}
+
+.title {
+  color: white;
+  font-family: "Dela Gothic One", cursive;
+  font-size: 64px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.title-blue {
+  color: #0f3b4b;
+  font-size: 56px;
+}
+
+.title-yellow {
+  background-color: #EFBF22;
+  font-size: 50px;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.title-second {
+  text-align: left;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+.container {
+  background-color: #00000047;
+  min-height: 100vh;
+}
+
+.container-second {
+  min-height: 90vh;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 4rem;
+  padding-left: 4rem;
+}
+
+.container-grid{
+    max-width: 400px;
+}
+
+.container-button {
+  max-width: fit-content;
+  align-self: end;
+  justify-self: end;
+}
+
+.menu {
+  background-color: white;
+  max-width: fit-content;
+  margin: 0 auto;
+  border: 5px solid #ffca1e;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.menu-price {
+  padding: 1rem 2rem;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.container-range {
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 25%;
+}
+
+.range {
+  width: 100%;
+
+  appearance: none;
+  height: 25px;
+  border-radius: 16px;
+  background: white;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 65px;
+  height: 150px;
+  background-image: url(./img/slider.png);
+  background-size: 65px 150px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.range.personal::-webkit-slider-thumb {
+  background-image: url(./img/slider.png);
+}
+
+.range.empresarial::-webkit-slider-thumb {
+  background-image: url(./img/empresarial.png);
+}
+
+.range.industrial::-webkit-slider-thumb {
+  background-image: url(./img/industrial.png);
+}
+
+.range::-moz-range-thumb {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background: #29a6bb;
+  cursor: pointer;
+}
+
+.button {
+  font-size: 40px;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  color: white;
+  font-weight: 300;
+  background-color: #b19653;
+  border-radius: 16px;
+  letter-spacing: 0.8px;
+  text-transform: lowercase;
+  font-family: "Dela Gothic One", cursive;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #9f8d60;
+}
+
+.ubi {
+  position: absolute;
+  bottom: 5%;
+  left: 43%;
+}
+
+.active {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.image-filtro{
+  position: absolute;
+  max-width: 600px;
+  left: 45%;
+  bottom: 0;
+}

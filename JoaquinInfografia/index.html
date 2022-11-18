@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Dela+Gothic+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Infografía</title>
+</head>
+
+<body id="body">
+
+    <section id="primary">
+        <div class="grid">
+            <div class="container">
+                <h1 class="title">¿Qué uso le darás al filtro?</h1>
+                <div class="menu">
+                    <ul>
+                        <li class="active" id="btnPersonal">Uso Personal</li>
+                        <li id="btnEmpresarial">Uso Empresarial</li>
+                        <li id="btnIndustrial">Uso Industrial</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="">
+                <h2 class="title title-blue">¿Cuánto estás dispuesto a invertir por una solución?</h2>
+                <div class="menu menu-price">$<span class="price" id="myPrice"></span></div>
+
+                <div class="container-range">
+                    <!-- <input type="range" class="range" min="0" max="2" step="1"> -->
+
+                    <input type="range" min="1" max="3" class="range" value="1" id="myRange">
+                </div>
+            </div>
+            <button class="button ubi" id="showSecond">Aceptar</button>
+        </div>
+
+
+
+
+
+    </section>
+
+    <section class="second hidden" id="second">
+        <div class="grid container-second">
+            <div class="container-grid">
+                <h1 class="title title-blue title-second">Has elegido una opción sustentable que cuesta $<span
+                        id="price"></span>
+                </h1>
+                <h2 class="title-yellow">¡Que lo podes hacer vos mismo!</h2>
+            </div>
+            <div class="container-button">
+                <button class="button">Aceptar</button>
+            </div>
+        </div>
+
+        <img src="img/bottle.png" id="filtro" class="image-filtro" alt="filtro">
+
+    </section>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
